@@ -101,6 +101,7 @@ alias grep='grep --color=auto'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
+alias hibernate='sudo pm-hibernate'
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like

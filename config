@@ -165,7 +165,7 @@ exec cinnamon-sound-applet
 bindsym $mod+Ctrl+l exec i3lock -c 000000
 
 # start Firefox
-exec --no-startup-id i3-msg 'workspace 1; exec Firefox'
+exec  Firefox
 
 # start Telegram
-exec --no-startup-id i3-msg 'workspace 10;  ~/Downloads/Telegram/./Telegram &'
+exec ~/Downloads/Telegram/./Telegram &
