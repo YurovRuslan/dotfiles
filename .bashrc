@@ -92,9 +92,9 @@ fi
 export PS2='> '
 
 # some more ls aliases
-alias ll='ls -la --color=auto'
-alias la='ls -A'
-alias l='ls -CF'
+alias ll='ls -lha --color=auto'
+alias la='ls -Ah'
+alias l='ls -CFh'
 export ihor_yurov='yurov@185.58.205.121'
 export ihor_via_kozliuk='yurov@77.41.75.23 -p 20022'
 alias grep='grep --color=auto'

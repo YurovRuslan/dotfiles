@@ -2,7 +2,7 @@
 syntax enable
 
 " set history length
-set history=100
+set history=1000
 
 " set <leader>
 let mapleader=","
