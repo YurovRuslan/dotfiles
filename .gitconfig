@@ -1,3 +1,12 @@
+# Это файл конфигурации пользователя Git. 
+[user]
+# Пожалуйста, адаптируйте и раскомментируйте следующие строки:
+    user = yurov
+    email = yurovrusik@gmail.com
+    name = Yurov Ruslan
+[core]
+    editor = /usr/bin/vim
+
 [alias]
   a = add
   co = checkout
