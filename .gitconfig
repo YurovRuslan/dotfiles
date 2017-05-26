@@ -1,0 +1,17 @@
+[alias]
+  a = add
+  co = checkout
+  c = commit
+  s = status
+  br = branch
+  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+  type = cat-file -t
+  dump = cat-file -p
+  d = diff
+  
+  # list branches sorted by last modified
+  b = "!git for-each-ref --sort='-authordate' --format='%(authordate)%09%(objectname:short)%09%(refname)' refs/heads | sed -e 's-refs/heads/--'"
+  
+  # list aliases
+  la = "!git config -l | grep alias | cut -c 7-"
+
