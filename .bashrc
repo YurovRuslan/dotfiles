@@ -103,7 +103,6 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 alias -- -='cd -'
 alias ~='cd ~'
-alias hibernate='sudo pm-hibernate'
 alias nut='cd /home/yurov/netdike/main/nut'
 alias click='cd /home/yurov/netdike/main/click'
 alias configs='cd /home/yurov/netdike/main/configs'
@@ -132,6 +131,13 @@ alias gitlog='git log --graph --oneline --decorate --date=relative --all'
 
 export PATH=$PATH:/usr/sbin
 
+alias hibernate='sudo systemctl hibernate'
+
+# Alias definitions.
+# You may want to put all your additions into a separate file like
+# ~/.bash_aliases, instead of adding them here directly.
+# See /usr/share/doc/bash-doc/examples in the bash-doc package.
+
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
@@ -155,4 +161,4 @@ fi
 # Useful for debugging
 alias debug="set -o xtrace"
 
-
+DPDK_PATH=/home/yurov/cpp/dpdk-17.08/build/

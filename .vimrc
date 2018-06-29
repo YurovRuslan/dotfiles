@@ -72,3 +72,9 @@ map <F7> :bn<cr>
 map <leader>p :bp<cr>
 map <F8> :bp<cr>
 map <leader>d :bd<cr> 
+
+" Ctrl-P
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+map <silent> <Leader>t :CtrlP()<CR>
+noremap <leader>b<space> :CtrlPBuffer<cr>
+let g:ctrlp_custom_ignore = '\v[\/]dist$'
