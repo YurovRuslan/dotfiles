@@ -5,7 +5,7 @@ syntax enable
 set history=1000
 
 " set <leader>
-let mapleader=","
+let mapleader=";"
 
 " to reload ~/.vimrc
 map <leader>rr :source ~/.vimrc<CR>
@@ -31,6 +31,9 @@ set incsearch
 " highlight matches
 set hlsearch
 
+" indent
+set autoindent
+set shiftwidth=4
 
 "turn off search highlight
 nnoremap <leader><space> :nohlsearch<CR>
@@ -59,3 +62,13 @@ set wildignore=*.o,*~,*.pyc
 set nobackup
 set nowb
 set noswapfile
+
+set mouse=v
+
+" mapping
+map <leader>a :badd<cr>
+map <leader>n :bn<cr>
+map <F7> :bn<cr>
+map <leader>p :bp<cr>
+map <F8> :bp<cr>
+map <leader>d :bd<cr> 

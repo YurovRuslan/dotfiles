@@ -101,25 +101,36 @@ alias grep='grep --color=auto'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
+alias -- -='cd -'
+alias ~='cd ~'
 alias hibernate='sudo pm-hibernate'
+alias nut='cd /home/yurov/netdike/main/nut'
+alias click='cd /home/yurov/netdike/main/click'
+alias configs='cd /home/yurov/netdike/main/configs'
 
 # Git aliases
 alias gs='git status '
 alias ga='git add '
 alias gb='git branch '
 alias gc='git commit'
+alias gcm='git commit -m'
 alias gd='git diff'
 alias go='git checkout '
 alias gk='gitk --all&'
 alias gx='gitx --all'
+alias gf='git fetch'
+alias grh='git rebase -i HEAD~'
+alias gr='git rebase '
+alias gr2='git rebase -i HEAD~2'
+alias gr3='git rebase -i HEAD~3'
+alias gp='git push '
+alias gpf='git push -f '
 
 alias got='git '
 alias get='git '
+alias gitlog='git log --graph --oneline --decorate --date=relative --all'
 
-# Alias definitions.
-# You may want to put all your additions into a separate file like
-# ~/.bash_aliases, instead of adding them here directly.
-# See /usr/share/doc/bash-doc/examples in the bash-doc package.
+export PATH=$PATH:/usr/sbin
 
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
