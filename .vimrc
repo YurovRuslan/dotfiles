@@ -78,3 +78,22 @@ set runtimepath^=~/.vim/bundle/ctrlp.vim
 map <silent> <Leader>t :CtrlP()<CR>
 noremap <leader>b<space> :CtrlPBuffer<cr>
 let g:ctrlp_custom_ignore = '\v[\/]dist$'
+
+if empty(glob('~/.vim/autoload/plug.vim'))
+    silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
+" Directory for plugins
+call plug#begin('~/.vim/plugged')
+
+Plug 'Shougo/unite.vim'
+Plug 'jreybert/vimagit'
+Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/syntastic'
+Plug 'valloric/youcompleteme'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'w0rp/ale'
+
+call plug#end()
