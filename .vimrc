@@ -35,6 +35,9 @@ set hlsearch
 set autoindent
 set shiftwidth=4
 
+" set filename
+set laststatus=2
+
 "turn off search highlight
 nnoremap <leader><space> :nohlsearch<CR>
 
@@ -48,6 +51,9 @@ nnoremap ^ <nop>
 
 " ignore case sensitiviness
 set ignorecase
+
+" set relative numbers
+set number relativenumber
 
 " show row and column ruler information
 set ruler
@@ -72,6 +78,7 @@ map <F7> :bn<cr>
 map <leader>p :bp<cr>
 map <F8> :bp<cr>
 map <leader>d :bd<cr> 
+map <leader>git :Magit<cr>
 
 " Ctrl-P
 set runtimepath^=~/.vim/bundle/ctrlp.vim
@@ -91,9 +98,9 @@ call plug#begin('~/.vim/plugged')
 Plug 'Shougo/unite.vim'
 Plug 'jreybert/vimagit'
 Plug 'scrooloose/nerdtree'
-Plug 'scrooloose/syntastic'
-Plug 'valloric/youcompleteme'
-Plug 'ctrlpvim/ctrlp.vim'
-Plug 'w0rp/ale'
+" Plug 'scrooloose/syntastic'
+" Plug 'valloric/youcompleteme'
+" Plug 'ctrlpvim/ctrlp.vim'
+" Plug 'w0rp/ale'
 
 call plug#end()

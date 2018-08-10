@@ -56,6 +56,24 @@ if [ -n "$force_color_prompt" ]; then
     fi
 fi
 
+export COLOR_NC='\e[0m' # No Color
+export COLOR_WHITE='\e[1;37m'
+export COLOR_BLACK='\e[0;30m'
+export COLOR_BLUE='\e[0;34m'
+export COLOR_LIGHT_BLUE='\e[1;34m'
+export COLOR_GREEN='\e[0;32m'
+export COLOR_LIGHT_GREEN='\e[1;32m'
+export COLOR_CYAN='\e[0;36m'
+export COLOR_LIGHT_CYAN='\e[1;36m'
+export COLOR_RED='\e[0;31m'
+export COLOR_LIGHT_RED='\e[1;31m'
+export COLOR_PURPLE='\e[0;35m'
+export COLOR_LIGHT_PURPLE='\e[1;35m'
+export COLOR_BROWN='\e[0;33m'
+export COLOR_YELLOW='\e[1;33m'
+export COLOR_GRAY='\e[0;30m'
+export COLOR_LIGHT_GRAY='\e[0;37m'
+
 if [ "$color_prompt" = yes ]; then
     PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u\[\033[00m\] \[\033[01;34m\][\W]\[\033[00m\]\$ '
 else
@@ -130,6 +148,7 @@ alias get='git '
 alias gitlog='git log --graph --oneline --decorate --date=relative --all'
 
 export PATH=$PATH:/usr/sbin
+export GOPATH=$HOME/go
 
 alias hibernate='sudo systemctl hibernate'
 
@@ -162,3 +181,8 @@ fi
 alias debug="set -o xtrace"
 
 DPDK_PATH=/home/yurov/cpp/dpdk-17.08/build/
+
+# Proxy
+if [ -f $HOME/.proxy ]; then
+    . $HOME/.proxy
+fi
