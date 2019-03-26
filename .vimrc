@@ -38,6 +38,10 @@ set shiftwidth=4
 " set filename
 set laststatus=2
 
+" textwidth
+set tw=80
+set fo+=t
+
 "turn off search highlight
 nnoremap <leader><space> :nohlsearch<CR>
 
@@ -92,6 +96,8 @@ if empty(glob('~/.vim/autoload/plug.vim'))
     autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
+nmap <leader>pi :PlugInstall<cr>
+
 " Directory for plugins
 call plug#begin('~/.vim/plugged')
 
@@ -100,7 +106,13 @@ Plug 'jreybert/vimagit'
 Plug 'scrooloose/nerdtree'
 " Plug 'scrooloose/syntastic'
 " Plug 'valloric/youcompleteme'
-" Plug 'ctrlpvim/ctrlp.vim'
+Plug 'ctrlpvim/ctrlp.vim'
 " Plug 'w0rp/ale'
+Plug 'vimwiki/vimwiki', { 'branch': 'dev' }
+Plug 'itchyny/calendar.vim'
 
 call plug#end()
+
+nmap <leader>nt :NERDTree<cr>
+nmap <leader>cp :CtrlP<cr>
+

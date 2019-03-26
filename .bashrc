@@ -132,7 +132,7 @@ alias gb='git branch '
 alias gc='git commit'
 alias gcm='git commit -m'
 alias gd='git diff'
-alias go='git checkout '
+alias gco='git checkout '
 alias gk='gitk --all&'
 alias gx='gitx --all'
 alias gf='git fetch'
@@ -181,8 +181,11 @@ fi
 alias debug="set -o xtrace"
 
 DPDK_PATH=/home/yurov/cpp/dpdk-17.08/build/
+export P7_DIR=/home/yurov/netdike/common/libP7
 
 # Proxy
 if [ -f $HOME/.proxy ]; then
     . $HOME/.proxy
 fi
+
+
